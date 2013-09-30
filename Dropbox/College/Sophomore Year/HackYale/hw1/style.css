@@ -1,0 +1,140 @@
+.body
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-style: normal;
+	margin:0px;
+	background-color: #f8f8f8;
+}
+
+.centerbox
+{
+	
+	position:absolute;
+	padding-left: 50px;
+	padding-right: 20px;
+	top:0px;
+	width: 970px;
+	color:black;
+	font-size: 12px;
+}
+
+.header
+{
+	padding-top:30px;
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+
+}
+
+.topbar
+{
+	height:100px;
+	background-color: black;
+}
+
+.middlebar
+{
+	height:200px;
+	background-color: white;
+}
+
+.column
+{
+	display: inline-block;
+	width:296px;
+	padding-right:36px;
+}
+
+.navbar
+{
+	font-size: 15px;
+	color:white;
+	text-align: right;
+}
+
+.navbar_element
+{
+	display: inline-block;
+	padding:20px;
+}
+
+.image1
+{
+	height:220px;
+	width:296px;
+	border-style: solid;
+}
+
+.image2
+{
+	height:360px;
+	width:628px;
+	border-style: solid;
+}
+
+.image3
+{
+	height:80px;
+	width:80px;
+	display: inline-block;
+	margin-top: 25px;
+	float:left;
+	border-style: solid;
+}
+
+.doublecolumn
+{
+	display: inline-block;
+	width:628px;
+	padding-right:36px;
+}
+.sidebar
+{
+	display:inline-block;
+	width:200px;
+	float:right;
+	font-size: 11px;
+	margin-bottom: 0px;
+	margin-top:0px;
+	padding:0px;
+	height:120px;
+}
+
+p
+{
+	font-size:14px;
+	font-weight:normal;
+	height:50px;
+	margin-top: 0px
+}
+
+
+h1
+{
+	color:black;
+	font-size: 50px;
+	padding-top: 50px;
+
+}
+
+h2{
+	color:black;
+	font-size:30px;
+}
+
+h3{
+	color:black;
+	font-size: 40px;
+	margin:5px;
+}
+
+h4{
+	color:black;
+	font-size: 20px;
+	margin:0px;
+}
+
+a:link    {color:white;text-decoration:none;}
+a:visited {color:gray;}
+a:hover   {font-style:italic; color:blue;}

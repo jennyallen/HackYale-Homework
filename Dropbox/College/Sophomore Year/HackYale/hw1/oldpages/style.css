@@ -1,0 +1,48 @@
+
+.name
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	margin-top:0px;
+	outline: none;
+  	color: black;
+  	text-align: right;
+}
+
+.header
+{
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 23px;
+	font-style: normal;
+	font-weight: bold;
+	margin-top:0px;
+	outline: none;
+  	color: black;
+  	text-align: right;
+}
+
+.body
+{
+	width: 100px;
+ 	margin: 0px;
+}
+.menu
+{
+
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 22 px;
+	font-style: normal;
+	font-weight: normal;
+	outline: none;
+ 	line-height:1em;
+ 	margin-top: 30px;
+ 	text-align: right;
+ 	color:#a9a9a9;
+
+}
+
+a:link    {color:#a9a9a9;text-decoration:none;}
+a:visited {color:#a9a9a9;}
+a:hover   {font-style:italic; color:red;}
