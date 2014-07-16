@@ -1,0 +1,91 @@
+look up maphilight jquery
+
+
+
+pear (r.i.p. slackline)
+	gender of match
+	fb integration
+		verify yale student
+		determine proximity of friendship through shared likes, mutual friendships
+			stranger
+			fb friend of friend
+			fb friend with few commonalities
+			close friend, suggested by fb friend with lots of commonalities
+	options
+		on campus
+		off campus
+		hgs
+		science hill
+	expand
+		dinner
+		running
+		get to know classmates
+		get to know profs
+		amazon for yalies used stuff
+		freelancers and employers
+		cab sharing - talk to patrick casey
+		basement storage sharing - talk to henok
+	notes
+		cutoff time 7pm day before
+			release times by email at 7:05
+		don't pair people already paired with before for x times
+			expect people to reach out themselves
+		end goal is	no one uses our app, when everyone knows each other
+		commons has extra hours
+		bay gross ldap and cas
+			https://gist.github.com/baygross/2054898
+		don't yet need user's list of classes, unless seminar pairing
+		default opening should be same as last week, or if null, then from group MWF or TTh
+		progress bar
+		
+	idea
+		simple, spontaneous way for yalies to get to know each other
+		have snarky, sassy tone
+		like binpack, need optimal solution with fewest people left out
+		Silence is golden, except when it's you sitting by yourself at lunch. If you're looking to meet new Yalies or make lifelong everlasting perpetualastic friendships, Slackline is for you. Give your availability and Slackline will randomly pair you with another lonely stoner for lunch. Peace.
+		https://github.com/sahil-gupta/Slackline
+	future
+		have user id photos be randomized animals
+		when pairing made, send random weird conversation topic
+		groups of 3
+
+
+
+check when posted on fb
+Andrew Goldstein: As Aaron mentioned, an app for this (called LunchtYme) is being created. I would say that it is 70 percent done, with a beautiful and simple user interface. If any of you would like to help with this - coding in ruby on rails or promoting it on campus - please contact me directly!
+	https://github.com/yale-stc-developer-curriculum/YEI-STC-Bootcamp-2013/wiki/LunchtYme
+	https://github.com/dcavoulacos/LunchtYme
+	https://github.com/dcavoulacos/Lunchtyme_draft
+	http://www.lunchwithstrangers.com/faq --- lunchesdc@gmail.com, and yalemeals@gmail.com
+YalePlus lunch tag system > ISO Lunch Tag
+	peter.xu@yale.edu
+
+
+
+
+
+
+model
+	User
+		string		netid
+		string		email (from ldap)
+		string		fname
+		string 		lname
+		integer		year
+      	string		college
+		has_many	:matches
+		has_many	:lunches, through: matches
+		has_and_belongs_to_many		:openings (remember to make join table)
+	Match
+		belongs_to		:user
+		belongs_to		:lunch
+	Lunch
+		string 			place (dining hall)
+		DateTime		time
+		has_many		:matches
+		has_many		:users, through: matches
+	Opening
+		string			place
+		int 			weekday (0=sun, 1=mon, ...)
+		int 			minuteTime (minutes since midnight (720=12pm, 780=1pm, ...))
+		has_and_belongs_to_many		:users
